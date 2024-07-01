@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Population Growth Analysis</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f2f2f2;
+                margin: 50px;
+                padding: 0;
+            }
+
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+            }
+
+            h1 {
+                margin: 0;
+            }
+
+            main {
+                max-width: 800px;
+                margin: 100 100;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+            }
+
+            form {
+                /* display: flex;
+            flex-wrap: wrap; */
+                margin-bottom: 40px;
+            }
+
+            label {
+                flex: 1 0 120px;
+                font-weight: bold;
+            }
+
+            input[type="text"] {
+                flex: 1 0 200px;
+                margin: 0 0 10px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                background-color: #f9f9f9;
+                font-size: 16px;
+            }
+
+            button {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: all 0.3s;
+            }
+
+            button:hover {
+                background-color: #666;
+            }
+
+            #result {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 20px;
+            }
+
+            #back{
+                position: relative;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <a id="back" href="index.html"><button>Back</button></a>
+        <h1>Population Growth Analysis</h1>
+        <p>Enter the following information:</p>
+        <form>
+            <label for="starting-population">Starting Population:</label
+            ><br /><br />
+            <input type="text" id="starting-population" /><br />
+
+            <label for="births-per-year">Births per Year:</label><br /><br />
+            <input type="text" id="births-per-year" /><br />
+
+            <label for="deaths-per-year">Deaths per Year:</label><br /><br />
+            <input type="text" id="deaths-per-year" /><br />
+
+            <label for="years">Years:</label><br /><br />x
+            <input type="text" id="years" /><br />
+
+            <button type="button" onclick="calculatePopulation()">
+                Calculate
+            </button>
+        </form>
+
+        <p id="result"></p>
+        <p id="num"></p>
+        <script src="script.js"></script>
+    </body>
+</html>
